@@ -4,7 +4,7 @@
 </script>
 
 <div class="p-10 lg:p-14">
-  <div class="max-w-md mx-auto">
+  <div class="max-w-lg mx-auto">
     <slot />
   </div>
 </div>

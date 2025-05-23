@@ -26,28 +26,25 @@
 <main class='mb-32'>
   <h1 class="antialiased flex flex-col">
     Joel Rivera
-    <span class="antialiased opacity-50">Senior Front-End Engineer, AI</span>
+    <span class="antialiased opacity-50">Full Stack AI Engineer</span>
   </h1>
 
   <p class="w-full my-20 mt-[68px] antialiased">
-    Hey there! I'm Joel, a front-end engineer and designer with a focus on building beautiful AI-powered user experiences.
+    I'm a full-stack engineer, designer, and AI enthusiast. I love solving real-world problems with AI by building practical LLM applications.
   </p>
 
   <!--Posts-->
   <section class="my-20">
-    <h2 class="font-bold mb-8">Blog</h2>
+    <h2 class="mb-8">Blog</h2>
 
     <ul>
-      {#each data.posts as { id, slug, title, description } (id)}
+      {#each data.posts as { id, slug, title } (id)}
         <li>
           <a
             class="block focus:outline-dotted focus:outline-white/50 focus:outline-offset-[16px] rounded-lg"
             href="/post/{slug}"
           >
-            <div class="w-full mb-8">
-              <p class="antialiased">{title}</p>
-              <p class="antialiased opacity-50">{description}</p>
-            </div>
+            <p class="w-full mb-2 antialiased">{title}</p>
           </a>
         </li>
       {/each}
