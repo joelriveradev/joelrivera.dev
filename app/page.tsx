@@ -31,7 +31,7 @@ const projects: Project[] = [
 
 export default function Page() {
   return (
-    <div className='w-full min-h-dvh max-w-4xl mx-auto p-7 md:p-16'>
+    <div className='w-full min-h-dvh max-w-4xl mx-auto p-7 md:p-16 relative'>
       <header className='flex items-start justify-between'>
         <div className='flex flex-col gap-px'>
           <span>Joel Rivera</span>
@@ -40,7 +40,7 @@ export default function Page() {
         </div>
       </header>
 
-      <main className='mt-20'>
+      <main className='h-full mt-20'>
         <h1>
           I'm a designer turned software engineer with more than a decade of
           experience working at the intersection of design, engineering, and
@@ -109,7 +109,7 @@ export default function Page() {
           </ul>
         </section>
 
-        <section className='mt-20'>
+        <footer className='mt-20 lg:absolute lg:bottom-10'>
           <h2 className='text-xs text-muted-foreground mb-2 sr-only'>
             Contact
           </h2>
@@ -143,7 +143,7 @@ export default function Page() {
               <RiAtLine />
             </a>
           </div>
-        </section>
+        </footer>
       </main>
     </div>
   )
