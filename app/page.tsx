@@ -80,30 +80,31 @@ export default function Page() {
 
           <ul className='flex lg:flex-row flex-col lg:items-center gap-5'>
             {projects.map((project) => (
-              <a
-                key={project.id}
-                href={project.href}
-                className='flex-1 group rounded-lg'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <Card className='dark:bg-tranparent dark:group-hover:bg-neutral-800/30 group-hover:bg-neutral-200/30 group-hover:transition-colors'>
-                  <CardHeader className='flex items-center gap-2'>
-                    <CardTitle className='opacity-50'>
-                      {project.title}
-                    </CardTitle>
+              <li key={project.id} className='flex-1'>
+                <a
+                  href={project.href}
+                  className='group rounded-lg block'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Card className='dark:bg-tranparent dark:group-hover:bg-neutral-800/30 group-hover:bg-neutral-200/30 group-hover:transition-colors'>
+                    <CardHeader className='flex items-center gap-2'>
+                      <CardTitle className='opacity-50'>
+                        {project.title}
+                      </CardTitle>
 
-                    <RiArrowRightUpLine
-                      className='text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity'
-                      size={18}
-                    />
-                  </CardHeader>
+                      <RiArrowRightUpLine
+                        className='text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity'
+                        size={18}
+                      />
+                    </CardHeader>
 
-                  <CardContent>
-                    <p className='opacity-80'>{project.description}</p>
-                  </CardContent>
-                </Card>
-              </a>
+                    <CardContent>
+                      <p className='opacity-80'>{project.description}</p>
+                    </CardContent>
+                  </Card>
+                </a>
+              </li>
             ))}
           </ul>
         </section>
@@ -118,6 +119,7 @@ export default function Page() {
               href='https://github.com/joelriveradev'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='GitHub'
               className='text-muted-foreground hover:text-foreground/80 transition-colors'
             >
               <RiGithubFill />
@@ -127,6 +129,7 @@ export default function Page() {
               href='https://www.linkedin.com/in/joel-rivera-24a4b5aa/'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='LinkedIn'
               className='text-muted-foreground hover:text-foreground/80 transition-colors'
             >
               <RiLinkedinBoxFill />
@@ -134,8 +137,7 @@ export default function Page() {
 
             <a
               href='mailto:joelrivera.dev@gmail.com'
-              target='_blank'
-              rel='noopener noreferrer'
+              aria-label='Email'
               className='text-muted-foreground hover:text-foreground/80 transition-colors'
             >
               <RiAtLine />
