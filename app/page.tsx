@@ -1,3 +1,4 @@
+import { ThemeToggle } from '@/components/theme-toggle'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 import {
@@ -25,7 +26,7 @@ const projects: Project[] = [
     id: '2',
     title: 'tuvio',
     description: 'Agentic AI-powered conversational learning',
-    href: 'https://tuvio.vercel.app//'
+    href: 'https://tuvio.vercel.app/'
   }
 ]
 
@@ -37,6 +38,10 @@ export default function Page() {
           <span>Joel Rivera</span>
 
           <span className='text-muted-foreground'>AI Software Engineer</span>
+        </div>
+
+        <div className='self-end'>
+          <ThemeToggle />
         </div>
       </header>
 
