@@ -70,7 +70,7 @@ export default function Page() {
           as an AI Software Engineer, and I own an AI services company called
           Rivasyst. If you're interested in building AI-powered solutions,{' '}
           <a
-            href='https://rivasyst.com/'
+            href='https://rivasyst.ai/'
             target='_blank'
             rel='noopener noreferrer'
             className='underline-offset-3 underline'
